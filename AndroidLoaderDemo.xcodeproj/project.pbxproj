@@ -14,6 +14,8 @@
 		53FF015B23C5C44F00B1228C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53FF015A23C5C44F00B1228C /* Assets.xcassets */; };
 		53FF015E23C5C44F00B1228C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53FF015C23C5C44F00B1228C /* LaunchScreen.storyboard */; };
 		53FF016923C5C44F00B1228C /* AndroidLoaderDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF016823C5C44F00B1228C /* AndroidLoaderDemoUITests.swift */; };
+		53FF017423C5CAD300B1228C /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF017323C5CAD300B1228C /* LoaderView.swift */; };
+		53FF017C23C5DD1D00B1228C /* FNLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53FF017B23C5DD1D00B1228C /* FNLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		53FF016423C5C44F00B1228C /* AndroidLoaderDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AndroidLoaderDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53FF016823C5C44F00B1228C /* AndroidLoaderDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndroidLoaderDemoUITests.swift; sourceTree = "<group>"; };
 		53FF016A23C5C44F00B1228C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53FF017323C5CAD300B1228C /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		53FF017B23C5DD1D00B1228C /* FNLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FNLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				53FF015A23C5C44F00B1228C /* Assets.xcassets */,
 				53FF015C23C5C44F00B1228C /* LaunchScreen.storyboard */,
 				53FF015F23C5C44F00B1228C /* Info.plist */,
+				53FF017B23C5DD1D00B1228C /* FNLoader.swift */,
+				53FF017323C5CAD300B1228C /* LoaderView.swift */,
 			);
 			path = AndroidLoaderDemo;
 			sourceTree = "<group>";
@@ -201,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				53FF015623C5C44D00B1228C /* ViewController.swift in Sources */,
+				53FF017423C5CAD300B1228C /* LoaderView.swift in Sources */,
 				53FF015223C5C44D00B1228C /* AppDelegate.swift in Sources */,
+				53FF017C23C5DD1D00B1228C /* FNLoader.swift in Sources */,
 				53FF015423C5C44D00B1228C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,15 +370,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitesh Gala (84C3465E6Z)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B7WTU6S9GU;
 				INFOPLIST_FILE = AndroidLoaderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hubworks.demo.AndroidLoaderDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubworks.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Demo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -380,15 +390,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mitesh Gala (84C3465E6Z)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = B7WTU6S9GU;
 				INFOPLIST_FILE = AndroidLoaderDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hubworks.demo.AndroidLoaderDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hubworks.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = Demo;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
