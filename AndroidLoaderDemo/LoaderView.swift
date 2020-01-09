@@ -22,7 +22,7 @@ class LoaderView: UIView {
         msgLbl.translatesAutoresizingMaskIntoConstraints = false
         msgLbl.lineBreakMode = .byWordWrapping
         msgLbl.numberOfLines = 0
-        msgLbl.font = UIFont(name: "", size: 15)
+        msgLbl.font = msgLbl.font.withSize(10)
         msgLbl.textAlignment = .left
         msgLbl.center = self.center
         fnLoaded.add()
@@ -40,7 +40,7 @@ class LoaderView: UIView {
         let topLblConst = NSLayoutConstraint(item: msgLbl, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top, multiplier: 1, constant: 10)
         let bottomLblConst = NSLayoutConstraint(item: msgLbl, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom, multiplier: 1, constant: -10)
         let verticalLblConst = NSLayoutConstraint(item: msgLbl, attribute: .centerY, relatedBy: .equal, toItem: self, attribute: .centerY, multiplier: 1, constant: 0)
-        let leadLblConst = NSLayoutConstraint(item: msgLbl, attribute: .leading, relatedBy: .equal, toItem: fnLoaded, attribute: .trailing, multiplier: 1, constant: 10)
+        let leadLblConst = NSLayoutConstraint(item: msgLbl, attribute: .leading, relatedBy: .equal, toItem: fnLoaded, attribute: .trailing, multiplier: 1, constant: 15)
         let trailLblConst = NSLayoutConstraint(item: msgLbl, attribute: .trailing, relatedBy: .equal, toItem: self, attribute: .trailing, multiplier: 1, constant: -30)
         self.addConstraints([verLoaderConst,leadLoaderConst,heightLoaderConst,widthLoaderConst,verticalLblConst,leadLblConst,trailLblConst,topLblConst,bottomLblConst])
     }
